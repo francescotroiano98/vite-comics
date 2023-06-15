@@ -1,17 +1,20 @@
 <template>
-    <div class="logo-container">
-        <img src="../assets/img/dc-logo.png" alt="">
-        
-    </div>
-    <div>
-        <nav>
-            <ul>
-                <li v-for="list in dcNavList">{{ list }}
+    <section class="container">
 
-                </li>
-            </ul>
-        </nav>
-    </div>
+        <div class="logo-container">
+            <img src="../assets/img/dc-logo.png" alt="">
+            
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li v-for="list in dcNavList">{{ list }}
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>    
 </template>
 <script>
 export default {
@@ -38,5 +41,19 @@ export default {
 }
 </script>
 <style lang="scss">
+.container{
+    padding-top: 0.5rem;
+}
+.logo-container img{
+    width: 75%;
+}
+ul{
+    display: flex;
+
+}
+li{
+    margin-right: 1.6rem;
+    font-size: 0.75rem;
+}
 
 </style>
