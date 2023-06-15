@@ -12,7 +12,7 @@
 
                                 <p v-for="(link) in link.link">
 
-                                    {{ link }}
+                                    <a href="#">{{ link }}</a>
                                 
                                 </p>
 
@@ -162,6 +162,9 @@ li h2{
 li p{
     font-size: 0.5rem;
     color: white;   
+}
+li p a:hover{
+    color: rgb(255, 255, 255);
 }
     
 </style>
