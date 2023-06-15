@@ -17,7 +17,8 @@ export default {
 </script>
 <style lang="scss">
 main{
-    
+    position: relative;
+    z-index: 1;
     background-color: black;
     padding-top: 1rem;
     padding-bottom: 1rem;

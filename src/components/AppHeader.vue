@@ -40,14 +40,14 @@ export default {
     
 }
 </script>
-<style lang="scss">
+
+<style lang="scss" scoped>
+
 .container{
 justify-content: space-between;
 padding: 1rem;
 }
-.logo-container img{
-    width: 85%;
-}
+
 ul{
     display: flex;
 

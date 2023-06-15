@@ -8,7 +8,7 @@
                         <ul>
                             <li v-for="(link) in footerLink">
 
-                                {{ link.name }} 
+                                    <h2>{{ link.name }}</h2>
 
                                 <p v-for="(link) in link.link">
 
@@ -32,7 +32,18 @@
             
         </section>
         <section class="footer-bottom">
-
+            <section class="container">
+                <div>
+                    <button>SIGN-UP NOW!</button>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </section>    
         </section>
     </footer>
 </template>
@@ -42,7 +53,7 @@ export default {
         
         return{
 
-            selectedContactIndex: 0,
+            
             footerLink:[{
                 name: 'DC COMICS',
                 link:[
@@ -93,17 +104,30 @@ export default {
                 ]
             },
                 
-            ]
+            ],
+           
+            
         }
     }
     
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .footer-top{
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
     
+}
+.footer-bottom{
+    background-color: rgb(60, 60, 60);
+    position: relative;
+    z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+button{
+    padding: 0.5rem;
 }
 .left-nav-content{
     width: 50%;
@@ -116,16 +140,28 @@ width: 50%;
 }
 .right-content img{
 
-width: 50%;
+position: absolute;
+width: 35%;
 
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    min-width: 456px;
 }
 li{
     color: white;
-}
-p{
-    font-size: 0.5rem;
-    color: white;
     
+    margin-right: 4rem;
+}
+li h2{
+    margin-top: 0px;
+    margin-bottom: 0.7rem;
+}
+li p{
+    font-size: 0.5rem;
+    color: white;   
 }
     
 </style>
