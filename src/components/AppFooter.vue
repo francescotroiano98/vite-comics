@@ -122,8 +122,8 @@ export default {
     background-color: rgb(60, 60, 60);
     position: relative;
     z-index: 1;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
     
 }
 button{
@@ -141,7 +141,7 @@ width: 50%;
 .right-content img{
 
 position: absolute;
-width: 35%;
+width: 525px;
 
 }
 ul{
