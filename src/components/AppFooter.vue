@@ -6,7 +6,18 @@
                 <div class="left-nav-content">
                     <nav>
                         <ul>
-                            <li v-for="link in footerLink">{{ link.name }} {{ link.link }}</li>
+                            <li v-for="(link) in footerLink">
+
+                                {{ link.name }} 
+
+                                <p v-for="(link) in link.link">
+
+                                    {{ link }}
+                                
+                                </p>
+
+                            </li>                           
+                            
                         </ul>
                     </nav>
                 </div>
@@ -28,7 +39,10 @@
 <script>
 export default {
     data(){
+        
         return{
+
+            selectedContactIndex: 0,
             footerLink:[{
                 name: 'DC COMICS',
                 link:[
@@ -42,6 +56,7 @@ export default {
                 'FANS',
                 'NEWS'
                 ]
+                
             },
             {
                 name: 'DC',
@@ -106,6 +121,11 @@ width: 50%;
 }
 li{
     color: white;
+}
+p{
+    font-size: 0.5rem;
+    color: white;
+    
 }
     
 </style>
