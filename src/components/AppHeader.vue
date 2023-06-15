@@ -8,7 +8,9 @@
         <div>
             <nav>
                 <ul>
-                    <li v-for="list in dcNavList">{{ list }}
+                    <li v-for="list in dcNavList">
+                        
+                        <a href="#">{{ list }}</a>
 
                     </li>
                 </ul>
@@ -57,7 +59,7 @@ li{
     font-size: 0.75rem;
     
 }
-li:hover{
+li a:hover{
     color: blue;
 }
 

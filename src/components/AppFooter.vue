@@ -163,6 +163,9 @@ li p{
     font-size: 0.5rem;
     color: white;   
 }
+li p a{
+    color: rgb(180, 180, 180);
+}
 li p a:hover{
     color: rgb(255, 255, 255);
 }
