@@ -42,10 +42,11 @@ export default {
 </script>
 <style lang="scss">
 .container{
-    padding-top: 0.5rem;
+justify-content: space-between;
+padding: 1rem;
 }
 .logo-container img{
-    width: 75%;
+    width: 85%;
 }
 ul{
     display: flex;
@@ -54,6 +55,10 @@ ul{
 li{
     margin-right: 1.6rem;
     font-size: 0.75rem;
+    
+}
+li:hover{
+    color: blue;
 }
 
 </style>
