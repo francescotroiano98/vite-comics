@@ -9,6 +9,8 @@
 
                 <h1>--Content goes here--</h1>
 
+                <Series/>
+
             </section>
 
         </section>
@@ -19,8 +21,12 @@
     
 </template>
 <script>
+import Series from './Series.vue';
 export default {
-    
+        name:"AppMain",
+        components : {
+            Series
+        }
 }
 </script>
 <style lang="scss">
