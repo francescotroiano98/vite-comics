@@ -1,10 +1,18 @@
 <template>
     <main>
-        <section class="container">
-
-            <h1>--Content goes here--</h1>
+        <section class="main-top">
 
         </section>
+        <section class="main-bottom">
+
+            <section class="container">
+
+                <h1>--Content goes here--</h1>
+
+            </section>
+
+        </section>
+        
 
         
     </main>       
@@ -20,12 +28,18 @@ main{
     position: relative;
     z-index: 1;
     background-color: black;
-    padding-top: 1rem;
+    
     padding-bottom: 1rem;
  
 }
 h1{
     color: white;
 }
+.main-top{
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 350px;
+    width: 100%;
+    background-size: cover;
     
+}
 </style>
