@@ -5,13 +5,12 @@
         </section>
         <section class="main-bottom">
 
-            <section class="container">
-
-                <h1>--Content goes here--</h1>
+           
+                
 
                 <Series/>
 
-            </section>
+            
 
         </section>
         

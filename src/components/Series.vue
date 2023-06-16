@@ -1,7 +1,9 @@
 <template>
-    <div>
-        <SeriesElement/>
-    </div>
+    
+        <section class="container">
+            <SeriesElement v-for="singleElement in seriesList" :thumb="singleElement.thumb" :series="singleElement.series"/>
+       </section>
+      
 </template>
 <script>
 import SeriesElement from './SeriesElement.vue';
@@ -92,6 +94,8 @@ export default {
     }
 }
 </script>
-<style lang="">
-    
+<style scoped>
+    .container{
+        flex-wrap: wrap;
+    }
 </style>

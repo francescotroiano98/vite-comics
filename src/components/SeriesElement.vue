@@ -1,6 +1,7 @@
 <template>
-    <div>
-        
+    <div class="series-container">
+        <img :src="thumb" alt="">
+        <p>{{ series }}</p>
     </div>
 </template>
 <script>
@@ -14,6 +15,19 @@ export default {
     }
 }
 </script>
-<style lang="">
+<style>
+.series-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+img{
+    width:100px;
+    height: 100px;
+    object-fit: cover;
     
+}
+p{
+    color:white;
+}    
 </style>
