@@ -1,7 +1,12 @@
 <template>
     <div class="series-container">
-        <img :src="thumb" alt="">
-        <p>{{ series }}</p>
+        <div class="image-container">
+            <img :src="thumb" alt="">
+        </div>
+        <div class="title-container">
+            <p>{{ series }}</p>
+        </div>
+        
     </div>
 </template>
 <script>
@@ -19,15 +24,25 @@ export default {
 .series-container{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         
     }
+    .image-container{
+        height: 170px;
+        width: 170px;
+    }
+    .title-container{
+        height: 80px;
+
+    }
 img{
-    width:100px;
-    height: 100px;
+    width:100%;
+    height: 100%;
     object-fit: cover;
     
 }
 p{
     color:white;
+    max-width: 150px;
 }    
 </style>

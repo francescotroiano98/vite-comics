@@ -97,5 +97,8 @@ export default {
 <style scoped>
     .container{
         flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
     }
 </style>
