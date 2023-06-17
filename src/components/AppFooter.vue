@@ -37,8 +37,14 @@
                     <button>SIGN-UP NOW!</button>
                 </div>
                 <div>
+                    <div>
+                        <h3>FOLLOW US</h3>
+                    </div>
                     <nav>
                         <ul>
+                            <li>
+
+                            </li>
                             
                         </ul>
                     </nav>
@@ -54,6 +60,7 @@ export default {
         return{
 
             
+
             footerLink:[{
                 name: 'DC COMICS',
                 link:[
@@ -137,10 +144,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 50%;
+position: absolute;
+left: 44%;
 }
 .right-content img{
 
-position: absolute;
 width: 525px;
 
 }

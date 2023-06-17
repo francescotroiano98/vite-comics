@@ -1,4 +1,5 @@
 <template>
+    
     <div class="series-container">
         <div class="image-container">
             <img :src="thumb" alt="">
@@ -25,11 +26,13 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: calc(100% / 6.8) ;
         
     }
     .image-container{
-        height: 170px;
-        width: 170px;
+        width: 150px;
+        height: 150px;
+        
     }
     .title-container{
         height: 80px;

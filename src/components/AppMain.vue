@@ -34,7 +34,7 @@ main{
     z-index: 1;
     background-color: black;
     
-    padding-bottom: 1rem;
+    padding-bottom: 3.5rem;
  
 }
 h1{

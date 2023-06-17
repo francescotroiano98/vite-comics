@@ -1,7 +1,19 @@
 <template>
     
         <section class="container">
-            <SeriesElement v-for="singleElement in seriesList" :thumb="singleElement.thumb" :series="singleElement.series"/>
+            <div class="current-series">
+
+                <h1>CURRENT SERIES
+                    
+                </h1>
+            </div>
+            
+                <SeriesElement v-for="singleElement in seriesList" :thumb="singleElement.thumb" :series="singleElement.series"/>
+                
+                    <button>
+                        LOAD MORE
+                    </button>
+                
        </section>
       
 </template>
@@ -95,10 +107,36 @@ export default {
 }
 </script>
 <style scoped>
+.current-series{
+    position: absolute;
+    bottom: 515px;
+    left: px;
+    background-color: blue;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.current-series h1{
+    color: white;
+    font-size: 0.9rem;
+}
     .container{
+        position: relative;
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 3rem;
         padding-bottom: 2rem;
+    }
+    button{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: blue;
+        color: white;
+        padding: 0.7rem 3.5rem 0.7rem 3.5rem;
+        
+        border: 1px solid blue;
+        
     }
 </style>
